@@ -1,21 +1,12 @@
-import './App.css';
-import Header from './components/Header'
-import Main from './components/taskList'
-import Footer from './components/Footer';
-
+import React from "react";
+import Router from './routes'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 
 function App() {
 
-    const user = {
-        id: 1,
-        name: 'Ryan Flores'
-    }
     return ( 
-        <div className="App">
-            <Header listTitle={'Estudos'} user={user}/>
-            <Main/>
-           <Footer/>
-        </div>
+        <Router />
     );
 }
 
